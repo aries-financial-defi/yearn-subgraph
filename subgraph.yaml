@@ -6,7 +6,7 @@ dataSources:
     name: yUSDVault
     network: mainnet
     source:
-      address: "0x5dbcf33d8c2e976c6b560249878e6f1491bca25c"
+      address: "0x5dbcF33D8c2E976c6b560249878e6F1491Bca25c"
       abi: V1Contract
       startBlock: 10559448
     mapping:
@@ -17,29 +17,21 @@ dataSources:
         - Vault
         - Deposit
         - Withdraw
-        - Harvest
         - Transfer
-        - AccountVaultBalance
-        - Account
-        - Token
       abis:
         - name: V1Contract
           file: ./abis/V1Contract.json
-        - name: Controller
-          file: ./abis/Controller.json
-        - name: Strategy
-          file: ./abis/Strategy.json
-        - name: ERC20
-          file: ./abis/ERC20.json
+        - name: erc20Contract
+          file: ./abis/erc20Contract.json
       eventHandlers:
         - event: Transfer(indexed address,indexed address,uint256)
-          handler: handleShareTransfer
+          handler: handleTransfer
       file: ./src/mapping.ts
   - kind: ethereum/contract
     name: yTUSDVault
     network:  mainnet
     source:
-      address: "0x37d19d1c4e1fa9dc47bd1ea12f742a0887eda74a"
+      address: "0x37d19d1c4E1fa9DC47bD1eA12f742a0887eDa74a"
       abi: V1Contract
       startBlock: 10603368
     mapping:
@@ -50,29 +42,21 @@ dataSources:
         - Vault
         - Deposit
         - Withdraw
-        - Harvest
         - Transfer
-        - AccountVaultBalance
-        - Account
-        - Token
       abis:
         - name: V1Contract
           file: ./abis/V1Contract.json
-        - name: Controller
-          file: ./abis/Controller.json
-        - name: Strategy
-          file: ./abis/Strategy.json
-        - name: ERC20
-          file: ./abis/ERC20.json
+        - name: erc20Contract
+          file: ./abis/erc20Contract.json
       eventHandlers:
         - event: Transfer(indexed address,indexed address,uint256)
-          handler: handleShareTransfer
+          handler: handleTransfer
       file: ./src/mapping.ts
   - kind: ethereum/contract
     name: yUSDTVault
     network: mainnet
     source:
-      address: "0x2f08119c6f07c006695e079aafc638b8789faf18"
+      address: "0x2f08119C6f07c006695E079AAFc638b8789FAf18"
       abi: V1Contract
       startBlock: 10651402
     mapping:
@@ -83,29 +67,21 @@ dataSources:
         - Vault
         - Deposit
         - Withdraw
-        - Harvest
         - Transfer
-        - AccountVaultBalance
-        - Account
-        - Token
       abis:
         - name: V1Contract
           file: ./abis/V1Contract.json
-        - name: Controller
-          file: ./abis/Controller.json
-        - name: Strategy
-          file: ./abis/Strategy.json
-        - name: ERC20
-          file: ./abis/ERC20.json
+        - name: erc20Contract
+          file: ./abis/erc20Contract.json
       eventHandlers:
         - event: Transfer(indexed address,indexed address,uint256)
-          handler: handleShareTransfer
+          handler: handleTransfer
       file: ./src/mapping.ts
   - kind: ethereum/contract
-    name: yYFIault
+    name: yYFIvault
     network: mainnet
     source:
-      address: "0xba2e7fed597fd0e3e70f5130bcdbbfe06bb94fe1"
+      address: "0xBA2E7Fed597fd0E3e70f5130BcDbbFE06bB94fe1"
       abi: V1Contract
       startBlock: 10690968
     mapping:
@@ -116,29 +92,21 @@ dataSources:
         - Vault
         - Deposit
         - Withdraw
-        - Harvest
         - Transfer
-        - AccountVaultBalance
-        - Account
-        - Token
       abis:
         - name: V1Contract
           file: ./abis/V1Contract.json
-        - name: Controller
-          file: ./abis/Controller.json
-        - name: Strategy
-          file: ./abis/Strategy.json
-        - name: ERC20
-          file: ./abis/ERC20.json
+        - name: erc20Contract
+          file: ./abis/erc20Contract.json
       eventHandlers:
         - event: Transfer(indexed address,indexed address,uint256)
-          handler: handleShareTransfer
+          handler: handleTransfer
       file: ./src/mapping.ts
   - kind: ethereum/contract
     name: yWSBTCVault
     network: mainnet
     source:
-      address: "0x7ff566e1d69deff32a7b244ae7276b9f90e9d0f6"
+      address: "0x7Ff566E1d69DEfF32a7b244aE7276b9f90e9D0f6"
       abi: V1Contract
       startBlock: 10734341
     mapping:
@@ -149,29 +117,21 @@ dataSources:
         - Vault
         - Deposit
         - Withdraw
-        - Harvest
         - Transfer
-        - AccountVaultBalance
-        - Account
-        - Token
       abis:
         - name: V1Contract
           file: ./abis/V1Contract.json
-        - name: Controller
-          file: ./abis/Controller.json
-        - name: Strategy
-          file: ./abis/Strategy.json
-        - name: ERC20
-          file: ./abis/ERC20.json
+        - name: erc20Contract
+          file: ./abis/erc20Contract.json
       eventHandlers:
         - event: Transfer(indexed address,indexed address,uint256)
-          handler: handleShareTransfer
+          handler: handleTransfer
       file: ./src/mapping.ts
   - kind: ethereum/contract
     name: yDAIVault
     network: mainnet
     source:
-      address: "0xacd43e627e64355f1861cec6d3a6688b31a6f952"
+      address: "0xACd43E627e64355f1861cEC6d3a6688B31a6F952"
       abi: V1Contract
       startBlock: 10650116
     mapping:
@@ -182,29 +142,21 @@ dataSources:
         - Vault
         - Deposit
         - Withdraw
-        - Harvest
         - Transfer
-        - AccountVaultBalance
-        - Account
-        - Token
       abis:
         - name: V1Contract
           file: ./abis/V1Contract.json
-        - name: Controller
-          file: ./abis/Controller.json
-        - name: Strategy
-          file: ./abis/Strategy.json
-        - name: ERC20
-          file: ./abis/ERC20.json
+        - name: erc20Contract
+          file: ./abis/erc20Contract.json
       eventHandlers:
         - event: Transfer(indexed address,indexed address,uint256)
-          handler: handleShareTransfer
+          handler: handleTransfer
       file: ./src/mapping.ts
   - kind: ethereum/contract
     name: yBUSDVault
     network: mainnet
     source:
-      address: "0x2994529c0652d127b7842094103715ec5299bbed"
+      address: "0x2994529C0652D127b7842094103715ec5299bBed"
       abi: V1Contract
       startBlock: 10709740
     mapping:
@@ -215,29 +167,21 @@ dataSources:
         - Vault
         - Deposit
         - Withdraw
-        - Harvest
         - Transfer
-        - AccountVaultBalance
-        - Account
-        - Token
       abis:
         - name: V1Contract
           file: ./abis/V1Contract.json
-        - name: Controller
-          file: ./abis/Controller.json
-        - name: Strategy
-          file: ./abis/Strategy.json
-        - name: ERC20
-          file: ./abis/ERC20.json
+        - name: erc20Contract
+          file: ./abis/erc20Contract.json
       eventHandlers:
         - event: Transfer(indexed address,indexed address,uint256)
-          handler: handleShareTransfer
+          handler: handleTransfer
       file: ./src/mapping.ts
   - kind: ethereum/contract
-    name: yWETHVault
+    name: yETHVault
     network: mainnet
     source:
-      address: "0xe1237aa7f535b0cc33fd973d66cbf830354d16c7"
+      address: "0xe1237aA7f535b0CC33Fd973D66cBf830354D16c7"
       abi: V1Contract
       startBlock: 10774489
     mapping:
@@ -248,128 +192,21 @@ dataSources:
         - Vault
         - Deposit
         - Withdraw
-        - Harvest
         - Transfer
-        - AccountVaultBalance
-        - Account
-        - Token
       abis:
         - name: V1Contract
           file: ./abis/V1Contract.json
-        - name: Controller
-          file: ./abis/Controller.json
-        - name: Strategy
-          file: ./abis/Strategy.json
-        - name: ERC20
-          file: ./abis/ERC20.json
+        - name: erc20Contract
+          file: ./abis/erc20Contract.json
       eventHandlers:
         - event: Transfer(indexed address,indexed address,uint256)
-          handler: handleShareTransfer
-      file: ./src/mapping.ts
+          handler: handleTransfer
+      file: ./src/mapping.ts 
   - kind: ethereum/contract
-    name: yUSDCVault
+    name: yaLinkVault
     network: mainnet
     source:
-      address: "0x597ad1e0c13bfe8025993d9e79c69e1c0233522e"
-      abi: V1Contract
-      startBlock: 10532708
-    mapping:
-      kind: ethereum/events
-      apiVersion: 0.0.4
-      language: wasm/assemblyscript
-      entities:
-        - Vault
-        - Deposit
-        - Withdraw
-        - Harvest
-        - Transfer
-        - AccountVaultBalance
-        - Account
-        - Token
-      abis:
-        - name: V1Contract
-          file: ./abis/V1Contract.json
-        - name: Controller
-          file: ./abis/Controller.json
-        - name: Strategy
-          file: ./abis/Strategy.json
-        - name: ERC20
-          file: ./abis/ERC20.json
-      eventHandlers:
-        - event: Transfer(indexed address,indexed address,uint256)
-          handler: handleShareTransfer
-      file: ./src/mapping.ts
-  - kind: ethereum/contract
-    name: yGUSDVault
-    network: mainnet
-    source:
-      address: "0xec0d8D3ED5477106c6D4ea27D90a60e594693C90"
-      abi: V1Contract
-      startBlock: 11065127
-    mapping:
-      kind: ethereum/events
-      apiVersion: 0.0.4
-      language: wasm/assemblyscript
-      entities:
-        - Vault
-        - Deposit
-        - Withdraw
-        - Harvest
-        - Transfer
-        - AccountVaultBalance
-        - Account
-        - Token
-      abis:
-        - name: V1Contract
-          file: ./abis/V1Contract.json
-        - name: Controller
-          file: ./abis/Controller.json
-        - name: Strategy
-          file: ./abis/Strategy.json
-        - name: ERC20
-          file: ./abis/ERC20.json
-      eventHandlers:
-        - event: Transfer(indexed address,indexed address,uint256)
-          handler: handleShareTransfer
-      file: ./src/mapping.ts
-  - kind: ethereum/contract
-    name: yLINKVault
-    network: mainnet
-    source:
-      address: "0x881b06da56bb5675c54e4ed311c21e54c5025298"
-      abi: V1Contract
-      startBlock: 10604016
-    mapping:
-      kind: ethereum/events
-      apiVersion: 0.0.4
-      language: wasm/assemblyscript
-      entities:
-        - Vault
-        - Deposit
-        - Withdraw
-        - Harvest
-        - Transfer
-        - AccountVaultBalance
-        - Account
-        - Token
-      abis:
-        - name: V1Contract
-          file: ./abis/V1Contract.json
-        - name: Controller
-          file: ./abis/Controller.json
-        - name: Strategy
-          file: ./abis/Strategy.json
-        - name: ERC20
-          file: ./abis/ERC20.json
-      eventHandlers:
-        - event: Transfer(indexed address,indexed address,uint256)
-          handler: handleShareTransfer
-      file: ./src/mapping.ts
-  - kind: ethereum/contract
-    name: yaLINKVault
-    network: mainnet
-    source:
-      address: "0x29e240cfd7946ba20895a7a02edb25c210f9f324"
+      address: "0x29E240CFD7946BA20895a7a02eDb25C210f9f324"
       abi: V1Contract
       startBlock: 10599617
     mapping:
@@ -380,31 +217,23 @@ dataSources:
         - Vault
         - Deposit
         - Withdraw
-        - Harvest
         - Transfer
-        - AccountVaultBalance
-        - Account
-        - Token
       abis:
         - name: V1Contract
           file: ./abis/V1Contract.json
-        - name: Controller
-          file: ./abis/Controller.json
-        - name: Strategy
-          file: ./abis/Strategy.json
-        - name: ERC20
-          file: ./abis/ERC20.json
+        - name: erc20Contract
+          file: ./abis/erc20Contract.json
       eventHandlers:
         - event: Transfer(indexed address,indexed address,uint256)
-          handler: handleShareTransfer
-      file: ./src/mapping.ts
+          handler: handleTransfer
+      file: ./src/mapping.ts 
   - kind: ethereum/contract
-    name: y3PoolVault
+    name: y3poolVault
     network: mainnet
     source:
-      address: "0x9ca85572e6a3ebf24dedd195623f188735a5179f"
+      address: "0x9cA85572E6A3EbF24dEDd195623F188735A5179f"
       abi: V1Contract
-      startBlock: 10809467
+      startBlock: 11026971
     mapping:
       kind: ethereum/events
       apiVersion: 0.0.4
@@ -413,51 +242,13 @@ dataSources:
         - Vault
         - Deposit
         - Withdraw
-        - Harvest
         - Transfer
-        - AccountVaultBalance
-        - Account
-        - Token
       abis:
         - name: V1Contract
           file: ./abis/V1Contract.json
-        - name: Controller
-          file: ./abis/Controller.json
-        - name: Strategy
-          file: ./abis/Strategy.json
-        - name: ERC20
-          file: ./abis/ERC20.json
+        - name: erc20Contract
+          file: ./abis/erc20Contract.json
       eventHandlers:
         - event: Transfer(indexed address,indexed address,uint256)
-          handler: handleShareTransfer
-      file: ./src/mapping.ts
-templates:
-  - name: Strategy
-    kind: ethereum/contract
-    network: mainnet
-    source:
-      abi: Strategy
-    mapping:
-      kind: ethereum/events
-      apiVersion: 0.0.4
-      language: wasm/assemblyscript
-      file: ./src/mapping.ts
-      entities:
-        - Vault
-        - Deposit
-        - Withdraw
-        - Harvest
-        - Transfer
-        - AccountVaultBalance
-        - Account
-        - Token
-      abis:
-        - name: Strategy
-          file: ./abis/Strategy.json
-        - name: V1Contract
-          file: ./abis/V1Contract.json
-        - name: Controller
-          file: ./abis/Controller.json
-      callHandlers:
-        - function: harvest()
-          handler: handleHarvest
+          handler: handleTransfer
+      file: ./src/mapping.ts 
